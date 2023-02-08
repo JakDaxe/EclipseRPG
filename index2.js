@@ -595,4 +595,4 @@ client.on('message', async message => {
   }
 });
 
-client.login("Njg1ODM5NjQyNTk1Mjk1MjM4.G4CFPP.JJcrfIGBUwh_lIBBZRsSahjIM0nS93VMFN7JwI");
+client.login("");
