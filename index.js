@@ -23,6 +23,21 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
+fs.readdir("./respirações", (err, files) => {
+  if (err) console.error(err);
+  let jsfiles = files.filter(f => f.split(".").pop() === "js");
+  if (jsfiles.length <= 0) {
+    console.log("Sem respirações!");
+    return;
+  }
+    console.log(`Carregando ${jsfiles.length} respirações...`);
+  jsfiles.forEach((f, i) => {
+    let props = require(`./respirações/${f}`);
+    console.log(`Respiração ${i + 1}: ${f} carregada!`);
+    client.commands.set(props.help.name, props);
+  });
+});
+
 client.on("message", message => {
   if (!message.content.startsWith("!")) return;
   let msgArray = message.content.split(" ");
