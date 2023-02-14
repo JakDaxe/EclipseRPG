@@ -10,7 +10,7 @@
 
 ## Sobre
 
-O EclipseRPG é um bot simples, que permite aos usuários ganharem pontos e depois gastarem em seus atributos. É um projeto pequeno que ainda está em desenvolvimento.
+O EclipseRPG é um bot simples, que permite aos usuários ganharem pontos e depois gastarem em seus atributos. É um projeto pequeno feito especificamente para um servidor privado, que ainda está em desenvolvimento. Mas, contudo, e facil de ser adaptado para funcionar em todos os servidores.
 
 Caso encontre algum erro ou tenha alguma sugestão, crie um issue ou faça um pull request que estarei alisando.
 O meu discord: JakDaxe#8805
