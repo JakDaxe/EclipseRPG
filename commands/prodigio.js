@@ -26,7 +26,7 @@ exports.run = async (client, message, args) => {
       .setDescription(`${message.author}, ${randomReward.prod}`)
       .setTimestamp()
      
-     
+     message.channel.send(embed)
   
 };
 
