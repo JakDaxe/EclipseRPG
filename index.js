@@ -23,17 +23,17 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
-fs.readdir("./respirações", (err, files) => {
+fs.readdir("./respirações/serpente", (err, files) => {
   if (err) console.error(err);
   let jsfiles = files.filter(f => f.split(".").pop() === "js");
   if (jsfiles.length <= 0) {
     console.log("Sem respirações!");
     return;
   }
-    console.log(`Carregando ${jsfiles.length} respirações...`);
+    console.log(`Carregando a Respiração da Serpente...`);
   jsfiles.forEach((f, i) => {
-    let props = require(`./respirações/${f}`);
-    console.log(`Respiração ${i + 1}: ${f} carregada!`);
+    let props = require(`./respirações/serpente/${f}`);
+    console.log(`Respiração da Serpente: ${f} carregada!`);
     client.commands.set(props.help.name, props);
   });
 });
