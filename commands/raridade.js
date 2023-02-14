@@ -39,6 +39,6 @@ exports.run = async (client, message, args) => {
 
 
 exports.help = {
-  name: "rpv",
-  description: "reprovar a ficha."
+  name: "raridade",
+  description: "rolar a raridade."
 };
