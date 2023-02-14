@@ -467,7 +467,7 @@ client.on('message', async message => {
     }
 
     
-     const currentPoints = await db.fetch(`forca_${message.author.id}`) || 0;
+     const currentPoints = await db.fetch(`forca_${user.id}`) || 0;
     await db.set(`forca_${message.author.id}`, currentPoints + points);
     
 
@@ -497,7 +497,7 @@ client.on('message', async message => {
     }
 
     
-     const currentPoints = await db.fetch(`speed_${message.author.id}`) || 0;
+     const currentPoints = await db.fetch(`speed_${user.id}`) || 0;
     await db.set(`speed_${message.author.id}`, currentPoints + points);
     
 
@@ -527,7 +527,7 @@ client.on('message', async message => {
     }
 
     
-     const currentPoints = await db.fetch(`resist_${message.author.id}`) || 0;
+     const currentPoints = await db.fetch(`resist_${user.id}`) || 0;
     await db.set(`resist_${message.author.id}`, currentPoints + points);
     
 
@@ -557,7 +557,7 @@ client.on('message', async message => {
     }
 
     
-     const currentPoints = await db.fetch(`folego_${message.author.id}`) || 0;
+     const currentPoints = await db.fetch(`folego_${user.id}`) || 0;
     await db.set(`folego_${message.author.id}`, currentPoints + points);
     
 
@@ -587,7 +587,7 @@ client.on('message', async message => {
     }
 
     
-     const currentPoints = await db.fetch(`blood_${message.author.id}`) || 0;
+     const currentPoints = await db.fetch(`blood_${user.id}`) || 0;
     await db.set(`blood_${message.author.id}`, currentPoints + points);
     
 
