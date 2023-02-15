@@ -13,12 +13,68 @@ exports.run = async (client, message, args) => {
               name: "Comum", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
           },
           {
+              name: "Comum", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Comum", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Comum", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Comum", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Raro", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Raro", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Raro", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
               name: "Raro", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
           },
           {
               name: "Epíco", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Epíco", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Epíco", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Lendário", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Comum", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Comum", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Raro", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Epíco", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Comum", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Comum", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Comum", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Raro", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
+          },
+          {
+              name: "Epico", description: `Com este nível de raridade você poderá ter uma respiração ou Kekkijutsu (caso seja um oni) a escolha. Veja em ${kekkijutsu} ou ${respiração} para saber quais estão nesta categoria de raridade.`
           }
-          
       ]
       
     //sistema de rolar 
@@ -27,7 +83,7 @@ exports.run = async (client, message, args) => {
  
     const embed = new Discord.MessageEmbed()
       .setColor('#3E005A')
-      .setDescription(`**Parabéns ${message.author}**, você conseguiu o nível de raridade **${randomReward.name}.\n\n${randomReward.description}`)
+      .setDescription(`**Parabéns ${message.author}**, você conseguiu o nível de raridade **${randomReward.name}**.\n\n${randomReward.description}`)
       .setTimestamp()
      
      

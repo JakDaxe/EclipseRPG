@@ -3,10 +3,11 @@ const db = require('quick.db');
 
 exports.run = async (client, message, args) => {
 
+    if (!message.member.hasPermission('ADMINISTRATOR')) {
+      return message.reply('🚫 **Erro:** `Sem permissão.`');
+    }
+    
     const user = message.mentions.users.first()
-    
-
-    
     const embed = new Discord.MessageEmbed()
       .setColor('#3E005A')
       

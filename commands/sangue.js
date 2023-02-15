@@ -9,7 +9,32 @@ exports.run = async (client, message, args) => {
     const sangue = [
         { prod: `🌸 **Você possui Sangue Marechi!**\n\nVocê nasceu com o sangue dos Mareshi. O sangue Mareshi é um sangue capaz de atordoar os onis por conta de ser um sangue muito "Nutritivo" e por conta disso exala um cheiro intenso que faz com que os onis sejam enfraquecidos.`},
         {
-          prod: `:drop_of_blood: **Você possui Sangue normal!** \n\nVocê nasceu como uma pessoa normal como qualquer outra, seu sangue é comum e não afeta onis.`
+          prod: `:drop_of_blood: **Você possui Sangue Normal!** \n\nVocê nasceu como uma pessoa normal como qualquer outra, seu sangue é comum e não afeta onis.`
+        },
+        
+        {
+          prod: `:drop_of_blood: **Você possui Sangue Normal!** \n\nVocê nasceu como uma pessoa normal como qualquer outra, seu sangue é comum e não afeta onis.`
+        },
+        
+        {
+          prod: `:drop_of_blood: **Você possui Sangue Normal!** \n\nVocê nasceu como uma pessoa normal como qualquer outra, seu sangue é comum e não afeta onis.`
+        },
+        
+        {
+          prod: `:drop_of_blood: **Você possui Sangue Normal!** \n\nVocê nasceu como uma pessoa normal como qualquer outra, seu sangue é comum e não afeta onis.`
+        },
+        
+        {
+          prod: `:drop_of_blood: **Você possui Sangue Normal!** \n\nVocê nasceu como uma pessoa normal como qualquer outra, seu sangue é comum e não afeta onis.`
+        },
+        {
+          prod: `:drop_of_blood: **Você possui Sangue Normal!** \n\nVocê nasceu como uma pessoa normal como qualquer outra, seu sangue é comum e não afeta onis.`
+        },
+        {
+          prod: `:drop_of_blood: **Você possui Sangue Normal!** \n\nVocê nasceu como uma pessoa normal como qualquer outra, seu sangue é comum e não afeta onis.`
+        },
+        {
+          prod: `:drop_of_blood: **Você possui Sangue Normal!** \n\nVocê nasceu como uma pessoa normal como qualquer outra, seu sangue é comum e não afeta onis.`
         }
     ]
     

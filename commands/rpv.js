@@ -5,6 +5,9 @@ exports.run = async (client, message, args) => {
 
     const user = message.mentions.users.first()
     
+      if (!message.member.hasPermission('ADMINISTRATOR')) {
+      return message.reply('🚫 **Erro:** `Sem permissão.`');
+    }
     
     const embed = new Discord.MessageEmbed()
       .setColor('#3E005A')
