@@ -664,4 +664,4 @@ client.on("ready", () => {
 
 });
 
-client.login("Njg1ODM5NjQyNTk1Mjk1MjM4.GHlzDm.Ho_GaZ1secryPmu9Yeauntm2FDtUsWHqh7bSgs");
+client.login("token");
