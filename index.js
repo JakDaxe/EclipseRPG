@@ -685,4 +685,4 @@ client.on("ready", () => {
 
 });
 
-client.login("Njg1ODM5NjQyNTk1Mjk1MjM4.GWg5uO.PdwHrxRPMW4IZPe7yG5-tSco9rAb75lDKhxiBA");
+client.login("token aqui");
