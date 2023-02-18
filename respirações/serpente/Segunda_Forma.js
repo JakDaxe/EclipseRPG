@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
     
     const embed = new Discord.MessageEmbed()
       .setColor('#3E005A')
-      .setDescription(`${message.author} usou a ${serpente}\n\n**Segunda Forma: Presas Venenosas da Cabeça Estreita (Ni no kata: Kyōzu no Dokuga)**`)
+      .setDescription(`${serpente}\n\n**Segunda Forma: Presas Venenosas da Cabeça Estreita!**\n**Requisitos:** <:breath:1072197862412267670> \`20 fôlego (2.000)\``)
       .setImage("https://media.discordapp.net/attachments/1072244257282338958/1075101974380425266/segunda-forma-respiracao-da-serpente-demon-slayer-kimetsu-no-yaiba.png?width=996&height=512")
       .setTimestamp()
      

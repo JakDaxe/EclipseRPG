@@ -40,7 +40,20 @@ fs.readdir("./respirações/serpente", (err, files) => {
   });
 });
 
-
+fs.readdir("./respirações/lua", (err, files) => {
+  if (err) console.error(err);
+  let jsfiles = files.filter(f => f.split(".").pop() === "js");
+  if (jsfiles.length <= 0) {
+    console.log("Sem respirações!");
+    return;
+  }
+    console.log(chalk.bold.yellow(`Carregando a Respiração da Lua...`));
+  jsfiles.forEach((f, i) => {
+    let props = require(`./respirações/lua/${f}`);
+    console.log(chalk.rgb(128, 0, 128).bold(`Respiração da Lua: ${f} ☑️`));
+    client.commands.set(props.help.name, props);
+  });
+});
 
 client.on("message", message => {
   if (!message.content.startsWith("!")) return;
@@ -313,9 +326,11 @@ client.on('message', async message => {
 
 client.on('message', async message => {
   if (message.content.startsWith('!addpoints')) {
-    if (!message.member.hasPermission('ADMINISTRATOR')) {
-      return message.reply('🚫 **Erro:** `Sem permissão.`');
-    }
+    const allowedRoles = ['⁀➷〘🎫〙• Administrador', '⁀➷〘🎟〙• Administrador Chefe', '⁀➷〘🤓〙• Moderador', '⁀➷〘🧠〙• Moderador Chefe', '⁀➷〘👨‍💻〙• Desenvolvedor', '⁀➷〘👑〙• Sub Dono', '⁀➷〘👑〙• Dono'];
+
+if (!message.member.roles.cache.some(r => allowedRoles.includes(r.name))) {
+  return message.reply("Você não possui permissão para executar este comando.");
+}
 
     const args = message.content.split(' ');
     if (args.length !== 3) {
@@ -341,9 +356,11 @@ client.on('message', async message => {
 
 client.on('message', async message => {
   if (message.content.startsWith('!removepoints')) {
-    if (!message.member.hasPermission('ADMINISTRATOR')) {
-      return message.reply('🚫 **Erro:** `Sem permissão.`');
-    }
+    const allowedRoles = ['⁀➷〘🎫〙• Administrador', '⁀➷〘🎟〙• Administrador Chefe', '⁀➷〘🤓〙• Moderador', '⁀➷〘🧠〙• Moderador Chefe', '⁀➷〘👨‍💻〙• Desenvolvedor', '⁀➷〘👑〙• Sub-Dono', '⁀➷〘👑〙• Dono'];
+
+if (!message.member.roles.cache.some(r => allowedRoles.includes(r.name))) {
+  return message.reply("Você não possui permissão para executar este comando.");
+}
 
     const args = message.content.split(' ');
     if (args.length !== 3) {
@@ -368,9 +385,11 @@ client.on('message', async message => {
 
 client.on('message', async message => {
   if (message.content.startsWith('!remove força')) {
-    if (!message.member.hasPermission('ADMINISTRATOR')) {
-      return message.reply('🚫 **Erro:** `Sem permissão.`');
-    }
+    const allowedRoles = ['⁀➷〘🎫〙• Administrador', '⁀➷〘🎟〙• Administrador Chefe', '⁀➷〘🤓〙• Moderador', '⁀➷〘🧠〙• Moderador Chefe', '⁀➷〘👨‍💻〙• Desenvolvedor', '⁀➷〘👑〙• Sub-Dono', '⁀➷〘👑〙• Dono'];
+
+if (!message.member.roles.cache.some(r => allowedRoles.includes(r.name))) {
+  return message.reply("Você não possui permissão para executar este comando.");
+}
 
     const args = message.content.split(' ');
     if (args.length !== 4) {
@@ -395,9 +414,11 @@ client.on('message', async message => {
 
 client.on('message', async message => {
   if (message.content.startsWith('!remove velocidade')) {
-    if (!message.member.hasPermission('ADMINISTRATOR')) {
-      return message.reply('🚫 **Erro:** `Sem permissão.`');
-    }
+    const allowedRoles = ['⁀➷〘🎫〙• Administrador', '⁀➷〘🎟〙• Administrador Chefe', '⁀➷〘🤓〙• Moderador', '⁀➷〘🧠〙• Moderador Chefe', '⁀➷〘👨‍💻〙• Desenvolvedor', '⁀➷〘👑〙• Sub-Dono', '⁀➷〘👑〙• Dono'];
+
+if (!message.member.roles.cache.some(r => allowedRoles.includes(r.name))) {
+  return message.reply("Você não possui permissão para executar este comando.");
+}
 
     const args = message.content.split(' ');
     if (args.length !== 4) {
@@ -664,4 +685,4 @@ client.on("ready", () => {
 
 });
 
-client.login("token");
+client.login("Njg1ODM5NjQyNTk1Mjk1MjM4.GWg5uO.PdwHrxRPMW4IZPe7yG5-tSco9rAb75lDKhxiBA");
